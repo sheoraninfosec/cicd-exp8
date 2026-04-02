@@ -3,12 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Clone Repo') {
-            steps {
-                echo 'Cloning repository...'
-            }
-        }
-
         stage('Build Docker Image') {
             steps {
                 sh 'docker build -t cicd-exp8 .'
